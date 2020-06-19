@@ -1,0 +1,29 @@
+.content.data-v-848f5b1c {
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.content .imageList.data-v-848f5b1c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin: 0 16rpx;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.content .imageList .imageBox.data-v-848f5b1c {
+  margin-bottom: 50rpx;
+  width: 350rpx;
+  height: 350rpx;
+}
+.content .imageList .imageBox image.data-v-848f5b1c {
+  width: 100%;
+  height: 100%;
+}
+
