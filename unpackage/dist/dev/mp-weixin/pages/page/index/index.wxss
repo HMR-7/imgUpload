@@ -1,8 +1,8 @@
-.content.data-v-848f5b1c {
+.content.data-v-66c81bce {
   min-height: 100vh;
   box-sizing: border-box;
 }
-.content .imageList.data-v-848f5b1c {
+.content .imageList.data-v-66c81bce {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -17,12 +17,12 @@
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.content .imageList .imageBox.data-v-848f5b1c {
+.content .imageList .imageBox.data-v-66c81bce {
   margin-bottom: 50rpx;
   width: 350rpx;
   height: 350rpx;
 }
-.content .imageList .imageBox image.data-v-848f5b1c {
+.content .imageList .imageBox image.data-v-66c81bce {
   width: 100%;
   height: 100%;
 }

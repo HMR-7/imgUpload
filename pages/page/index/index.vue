@@ -1,7 +1,8 @@
 <template>
   <view class="content">
+    <!-- <view @tap="t">快来点我</view> -->
     <button v-if="!ischecked" open-type="getUserInfo" @getuserinfo="getUserInfo">点我授权</button>
-    <!-- <view @tap="getLocation" style="height: 100rpx;text-align: center;line-height: 100rpx;">查看当前位置</view> -->
+    <view @tap="getLocation" style="height: 100rpx;text-align: center;line-height: 100rpx;">查看当前位置</view>
     <view
       v-if="ischecked"
       @tap="upLoadFile"
@@ -55,13 +56,10 @@ export default {
     let seconds = date.getSeconds();
     month = month > 9 ? month : "0" + month;
     day = day > 9 ? day : "0" + day;
-    console.log(`${year}-${month}-${day}-${hours}:${minutes}:${seconds}s`);
     uni.getLocation({
       type: "wgs84",
       success: function(res) {
         console.log(res);
-        console.log("当前位置的经度：" + res.longitude);
-        console.log("当前位置的纬度：" + res.latitude);
         t.address = `${res.longitude},${res.latitude}`;
         console.log(t.address);
       },
@@ -71,14 +69,25 @@ export default {
     });
   },
   methods: {
+    /*   async t() {
+      await this.b();
+      await this.b();
+      console.log("1");
+    },
+    b() {
+      return new Promise((reslove, reject) => {
+        setTimeout(function() {
+          console.log("2");
+          reslove(3);
+        }, 2000);
+      });
+    }, */
     getLocation() {
       let t = this;
       uni.getLocation({
         type: "wgs84",
         success: function(res) {
           console.log(res);
-          console.log("当前位置的经度：" + res.longitude);
-          console.log("当前位置的纬度：" + res.latitude);
           t.address = `${res.longitude},${res.latitude}`;
           console.log(t.address);
         },
